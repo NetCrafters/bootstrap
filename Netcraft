@@ -1,6 +1,8 @@
 BOOTSTRAP = ./nc/css/bootstrap.css
+BOOTSTRAP_MIN = ./nc/css/bootstrap.min.css
 BOOTSTRAP_LESS = ./nc/less/style.less
 BOOTSTRAP_RESPONSIVE = ./nc/css/bootstrap-responsive.css
+BOOTSTRAP_RESPONSIVE_MIN = ./nc/css/bootstrap-responsive.min.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
 DATE=$(shell date +%I:%M%p)
 CHECK=\033[32m✔\033[39m
@@ -21,6 +23,9 @@ build:
 	@./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@./node_modules/.bin/recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+	@./node_modules/.bin/recess --compress ${BOOTSTRAP} > ${BOOTSTRAP_MIN}
+	@./node_modules/.bin/recess --compress ${BOOTSTRAP_RESPONSIVE} > ${BOOTSTRAP_RESPONSIVE_MIN}
+	@echo "Compressing CSS with Recess...               ${CHECK} Done"
 	@node docs/build
 	@cp img/* nc/img/
 	@cp js/*.js nc/js/
