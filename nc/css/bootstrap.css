@@ -1,38 +1,19 @@
-.bootstrap-enabled {
-  /*!
- * Bootstrap v2.3.1
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
-
-  /* Allow for input prepend/append in search forms */
-
-  /* White icons with optional class, or on hover/focus/active states of certain elements */
-
-  /* move down carets for tabs */
-
-}
-
-.bootstrap-enabled .clearfix {
+.clearfix {
   *zoom: 1;
 }
 
-.bootstrap-enabled .clearfix:before,
-.bootstrap-enabled .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   display: table;
   line-height: 0;
   content: "";
 }
 
-.bootstrap-enabled .clearfix:after {
+.clearfix:after {
   clear: both;
 }
 
-.bootstrap-enabled .hide-text {
+.hide-text {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -40,13 +21,46 @@
   border: 0;
 }
 
-.bootstrap-enabled .input-block-level {
+.input-block-level {
   display: block;
   width: 100%;
   min-height: 30px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.affix {
+  position: fixed;
+}
+
+.bootstrap-enabled {
+  /* Allow for input prepend/append in search forms */
+
+  /* White icons with optional class, or on hover/focus/active states of certain elements */
+
+  /* move down carets for tabs */
+
 }
 
 .bootstrap-enabled article,
@@ -3137,32 +3151,6 @@
           border-radius: 3px;
 }
 
-.bootstrap-enabled .fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-     -moz-transition: opacity 0.15s linear;
-       -o-transition: opacity 0.15s linear;
-          transition: opacity 0.15s linear;
-}
-
-.bootstrap-enabled .fade.in {
-  opacity: 1;
-}
-
-.bootstrap-enabled .collapse {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-     -moz-transition: height 0.35s ease;
-       -o-transition: height 0.35s ease;
-          transition: height 0.35s ease;
-}
-
-.bootstrap-enabled .collapse.in {
-  height: auto;
-}
-
 .bootstrap-enabled .close {
   float: right;
   font-size: 20px;
@@ -5170,125 +5158,6 @@
   background-color: #fff;
 }
 
-.bootstrap-enabled .modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000000;
-}
-
-.bootstrap-enabled .modal-backdrop.fade {
-  opacity: 0;
-}
-
-.bootstrap-enabled .modal-backdrop,
-.bootstrap-enabled .modal-backdrop.fade.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-
-.bootstrap-enabled .modal {
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  z-index: 1050;
-  width: 560px;
-  margin-left: -280px;
-  background-color: #ffffff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  outline: none;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding-box;
-          background-clip: padding-box;
-}
-
-.bootstrap-enabled .modal.fade {
-  top: -25%;
-  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
-     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
-       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
-          transition: opacity 0.3s linear, top 0.3s ease-out;
-}
-
-.bootstrap-enabled .modal.fade.in {
-  top: 10%;
-}
-
-.bootstrap-enabled .modal-header {
-  padding: 9px 15px;
-  border-bottom: 1px solid #eee;
-}
-
-.bootstrap-enabled .modal-header .close {
-  margin-top: 2px;
-}
-
-.bootstrap-enabled .modal-header h3 {
-  margin: 0;
-  line-height: 30px;
-}
-
-.bootstrap-enabled .modal-body {
-  position: relative;
-  max-height: 400px;
-  padding: 15px;
-  overflow-y: auto;
-}
-
-.bootstrap-enabled .modal-form {
-  margin-bottom: 0;
-}
-
-.bootstrap-enabled .modal-footer {
-  padding: 14px 15px 15px;
-  margin-bottom: 0;
-  text-align: right;
-  background-color: #f5f5f5;
-  border-top: 1px solid #ddd;
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  *zoom: 1;
-  -webkit-box-shadow: inset 0 1px 0 #ffffff;
-     -moz-box-shadow: inset 0 1px 0 #ffffff;
-          box-shadow: inset 0 1px 0 #ffffff;
-}
-
-.bootstrap-enabled .modal-footer:before,
-.bootstrap-enabled .modal-footer:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-
-.bootstrap-enabled .modal-footer:after {
-  clear: both;
-}
-
-.bootstrap-enabled .modal-footer .btn + .btn {
-  margin-bottom: 0;
-  margin-left: 5px;
-}
-
-.bootstrap-enabled .modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-
-.bootstrap-enabled .modal-footer .btn-block + .btn-block {
-  margin-left: 0;
-}
-
 .bootstrap-enabled .tooltip {
   position: absolute;
   z-index: 1030;
@@ -6136,26 +6005,147 @@
   line-height: 30px;
 }
 
-.bootstrap-enabled .pull-right {
-  float: right;
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+     -moz-transition: opacity 0.15s linear;
+       -o-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear;
 }
 
-.bootstrap-enabled .pull-left {
-  float: left;
+.fade.in {
+  opacity: 1;
 }
 
-.bootstrap-enabled .hide {
-  display: none;
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
 }
 
-.bootstrap-enabled .show {
-  display: block;
+.collapse.in {
+  height: auto;
 }
 
-.bootstrap-enabled .invisible {
-  visibility: hidden;
-}
-
-.bootstrap-enabled .affix {
+.modal-backdrop {
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 1050;
+  width: 560px;
+  margin-left: -280px;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.fade.in {
+  top: 10%;
+}
+
+.modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header .close {
+  margin-top: 2px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+
+.modal-body {
+  position: relative;
+  max-height: 400px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.modal-form {
+  margin-bottom: 0;
+}
+
+.modal-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
 }
